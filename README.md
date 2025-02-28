@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Features
+
+1. Seamless Integration: The chatbot is integrated by simply embedding a script tag in the web page. It loads asynchronously and does not block the rendering of other components.
+2. Full-screen Display: The chatbot is configured to display in fullscreen mode for better visibility and user interaction.
+3. React Component: The chatbot is encapsulated in a React component (ChatbotEmbed) that manages the script's loading and cleanup lifecycle using useEffect.
+4. Configuration: The chatbot is configured via the data-id attribute and window.chtlConfig object to specify the chatbot ID and display settings.
+# Tech Stack
+
+1. React: The application is built using React, which allows for declarative UI and efficient component management.
+2. JavaScript (Vanilla): The external script is written in plain JavaScript and is loaded dynamically using createElement and appendChild.
+3. useEffect: React's useEffect hook is used to handle the lifecycle of the script, ensuring the script is added when the component mounts and 
+removed when it unmounts.
+
+# How to use
+1. After running the react app user need to wait for few seconds and the chatbot will be displayed on the same page.
+2. User need to enter his name and then he can proceed asking questions to chatbot.
+3. Below example file ensures usage of the chatbot 
+![Screenshot (16)](https://github.com/user-attachments/assets/14dfeaa3-6cc8-4c57-8fed-fe1357e36651)
